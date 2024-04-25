@@ -1,0 +1,35 @@
+﻿<Window x:Class="HouseRatingClientApp.View.Windows.LoginUserWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:vm="clr-namespace:HouseRatingClientApp.ViewModel"
+        xmlns:local="clr-namespace:HouseRatingClientApp.View.Windows"
+        mc:Ignorable="d"
+        
+        AllowsTransparency="True"
+        Background="Transparent"
+        WindowStartupLocation="CenterScreen"
+        WindowStyle="None"
+        Width="644" Height="252"
+        Title="EnterAppWindow">
+    <Border Style="{StaticResource BorderStyle}">
+        <Border.DataContext>
+            <vm:LoginUserViewModel/>
+        </Border.DataContext>
+
+
+        <StackPanel Margin="10" Orientation="Vertical">
+            <StackPanel Orientation="Vertical">
+                <TextBlock Text="ЛОГИН" Style="{StaticResource TextBlockStyle}"/>
+                <TextBox x:Name="TBLogin" Style="{StaticResource TextBoxStyle}"/>
+            </StackPanel>
+            <StackPanel Orientation="Vertical">
+                <TextBlock Text="ПАРОЛЬ" Style="{StaticResource TextBlockStyle}"/>
+                <TextBox x:Name="TBPassword" Style="{StaticResource TextBoxStyle}"/>
+            </StackPanel>
+            <Button Content="ВОЙТИ" Style="{StaticResource SaveButtonStyle}" Width="190"/>
+            <Button Command="{Binding CloseWindowCommand}" Content="ЗАКРЫТЬ" Style="{StaticResource SaveButtonStyle}" Width="190"/>
+        </StackPanel>
+    </Border>
+</Window>

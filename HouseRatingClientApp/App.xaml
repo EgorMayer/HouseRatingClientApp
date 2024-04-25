@@ -4,6 +4,14 @@
              xmlns:local="clr-namespace:HouseRatingClientApp"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
-         
+        <ResourceDictionary>
+
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="Resources\Style\BorderStyleDictionary.xaml"/>
+                <ResourceDictionary Source="Resources\Style\TextBlockStyleDictionary.xaml"/>
+                <ResourceDictionary Source="Resources\Style\ButtonStyleDictionary.xaml"/>
+                <ResourceDictionary Source="Resources\Style\TextBoxStyleDictionary.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
     </Application.Resources>
 </Application>
