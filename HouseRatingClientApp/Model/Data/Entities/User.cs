@@ -39,5 +39,6 @@ namespace HouseRatingClientApp.Model.Data.Entities
         }
 
 
+
     }
 }
