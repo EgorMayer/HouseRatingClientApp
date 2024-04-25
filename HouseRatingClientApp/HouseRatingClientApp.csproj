@@ -10,8 +10,6 @@
 
   <ItemGroup>
     <Folder Include="Model\Data\Entities\" />
-    <Folder Include="ViewModel\Base\" />
-    <Folder Include="View\Windows\" />
   </ItemGroup>
 
 </Project>
