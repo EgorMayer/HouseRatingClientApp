@@ -5,7 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:HouseRatingClientApp.View.Windows"
         mc:Ignorable="d"
-        Title="RegistrationUserWindow" Height="450" Width="800">
+        Title="RegistrationUserWindow" Height="450" Width="300"
+        WindowStyle="None">
     <Window.Resources>
         <SolidColorBrush x:Key="Button.MouseOver.Background" Color="#FFBEE6FD"/>
         <SolidColorBrush x:Key="Button.MouseOver.Border" Color="#FF3C7FB1"/>
@@ -76,25 +77,25 @@ Source="Assets/icons8-macos-закрыть-30.png"/>
                 </Button>-->
 
                 <StackPanel Margin="10">
-                    <TextBlock Text="ИМЯ:" Style="{StaticResource FontRegistration}"/>
-                    <TextBox x:Name="NameTextBox" Style="{StaticResource BaseStyleTextBox}" Height="25"/>
+                    <TextBlock Text="ИМЯ:" Style="{StaticResource TextBlockStyle}"/>
+                    <TextBox x:Name="NameTextBox" Style="{StaticResource TextBoxStyle}" Height="25"/>
 
-                    <TextBlock Text="ФАМИЛИЯ:" Margin="0 5 0 0" Style="{StaticResource FontRegistration}"/>
-                    <TextBox x:Name="SurnameTextBox" Margin="0 0 0 5" Style="{StaticResource BaseStyleTextBox}" Height="25"/>
+                    <TextBlock Text="ФАМИЛИЯ:" Margin="0 5 0 0" Style="{StaticResource TextBlockStyle}"/>
+                    <TextBox x:Name="SurnameTextBox" Margin="0 0 0 5" Style="{StaticResource TextBoxStyle}" Height="25"/>
 
-                    <TextBlock Text="ВОЗРАСТ:" Margin="0 5 0 0" Style="{StaticResource FontRegistration}"/>
-                    <TextBox x:Name="AgeTextBox" Margin="0 0 0 5" Style="{StaticResource BaseStyleTextBox}" Height="25"/>
+                    <TextBlock Text="ВОЗРАСТ:" Margin="0 5 0 0" Style="{StaticResource TextBlockStyle}"/>
+                    <TextBox x:Name="AgeTextBox" Margin="0 0 0 5" Style="{StaticResource TextBoxStyle}" Height="25"/>
 
-                    <TextBlock Text="ЛОГИН:" Margin="0 5 0 0" Style="{StaticResource FontRegistration}"/>
-                    <TextBox x:Name="LoginTextBox" Margin="0 0 0 5" Style="{StaticResource BaseStyleTextBox}" Height="25"/>
+                    <TextBlock Text="ЛОГИН:" Margin="0 5 0 0" Style="{StaticResource TextBlockStyle}"/>
+                    <TextBox x:Name="LoginTextBox" Margin="0 0 0 5" Style="{StaticResource TextBoxStyle}" Height="25"/>
 
-                    <TextBlock Text="ПАРОЛЬ:" Margin="0 5 0 0" Style="{StaticResource FontRegistration}"/>
-                    <TextBox x:Name="PasswordBox" Margin="0 0 0 5" Style="{StaticResource BaseStyleTextBox}" Height="25"/>
+                    <TextBlock Text="ПАРОЛЬ:" Margin="0 5 0 0" Style="{StaticResource TextBlockStyle}"/>
+                    <TextBox x:Name="PasswordBox" Margin="0 0 0 5" Style="{StaticResource TextBoxStyle}" Height="25"/>
 
 
                 </StackPanel>
 
-                <CheckBox Content="Я ЖИТЕЛЬ" x:Name="User" Style="{StaticResource BaseCheckBoxStyle}" Checked="User_Checked" Height="28" RenderTransformOrigin="0.497,0.594" Margin="10,259,-10,63"/>
+                <CheckBox Content="Я ЖИТЕЛЬ" x:Name="User" Style="{StaticResource BaseCheckBoxStyle}" Height="28" RenderTransformOrigin="0.497,0.594" Margin="10,259,-10,63"/>
                 <Button Template="{DynamicResource RoundedButton}" Content="ЗАРЕГИСТРИРОВАТЬСЯ" Style="{StaticResource BaseBTNStyle}" Margin="15,292,15,27"/>
             </Grid>
         </Border>
