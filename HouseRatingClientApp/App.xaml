@@ -12,6 +12,9 @@
                 <ResourceDictionary Source="Resources\Style\ButtonStyleDictionary.xaml"/>
                 <ResourceDictionary Source="Resources\Style\TextBoxStyleDictionary.xaml"/>
                 <ResourceDictionary Source="Resources\Style\TabControlStyleDictionary.xaml"/>
+                <ResourceDictionary Source="Resources\Style\RegistrationBTNStyleDictionary.xaml"/>
+                <ResourceDictionary Source="Resources\Style\RegistrationCheckBoxStyleDictionary.xaml"/>
+                <ResourceDictionary Source="Resources\Style\RegistrationTBStyleDictionary.xaml"/>
             </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>
     </Application.Resources>
