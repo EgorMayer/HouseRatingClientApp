@@ -22,11 +22,11 @@
         <StackPanel Margin="10" Orientation="Vertical">
             <StackPanel Orientation="Vertical">
                 <TextBlock Text="ЛОГИН" Style="{StaticResource TextBlockStyle}"/>
-                <TextBox x:Name="TBLogin" Style="{StaticResource TextBoxStyle}"/>
+                <TextBox Text="{Binding UserLogin}" Style="{StaticResource TextBoxStyle}"/>
             </StackPanel>
             <StackPanel Orientation="Vertical">
                 <TextBlock Text="ПАРОЛЬ" Style="{StaticResource TextBlockStyle}"/>
-                <TextBox x:Name="TBPassword" Style="{StaticResource TextBoxStyle}"/>
+                <TextBox Text="{Binding UserPassword}" Style="{StaticResource TextBoxStyle}"/>
             </StackPanel>
             <Border Padding="0 10">
                 <Grid>

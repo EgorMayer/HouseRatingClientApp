@@ -52,8 +52,7 @@
                         <TextBox Style="{StaticResource TextBoxStyle}"/>
                         <TextBlock Text="ПАРОЛЬ" Style="{StaticResource TextBlockStyle}"/>
                         <TextBox Style="{StaticResource TextBoxStyle}"/>
-
-                        <Button Content="СОХРАНИТЬ" Style="{StaticResource BaseButtonStyle}"/>
+                        <Button Width="250" Height="35" Margin="20" Content="СОХРАНИТЬ" Style="{StaticResource BaseButtonStyle}"/>
                     </StackPanel>
                 </Border>
             </TabItem>

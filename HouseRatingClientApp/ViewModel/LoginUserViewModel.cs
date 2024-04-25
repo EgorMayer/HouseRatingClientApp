@@ -12,14 +12,45 @@ namespace HouseRatingClientApp.ViewModel
 {
     public class LoginUserViewModel : VIewModelBase
     {
+        private string _userLogin;
+        private string UserLogin
+        {
+            get => _userLogin;
+            set
+            {
+                if (_userLogin != value)
+                {
+                    _userLogin = value;
+                    OnPropertyChanged(nameof(UserLogin));
+                }
+            }
+        }
+
+        private string _userPassword;
+        private string UserPassword
+        {
+            get => _userPassword;
+            set
+            {
+                if (_userPassword != value)
+                {
+                    _userPassword = value;
+                    OnPropertyChanged(nameof(UserPassword));
+                }
+            }
+        }
+
+
         public ICommand CloseWindowCommand { get; }
         public ICommand LoginUserCommand { get; }
 
 
         public LoginUserViewModel()
         {
+            UserLogin = string.Empty;
+            UserPassword = string.Empty;
             CloseWindowCommand = new LambdaCommand(CloseApp);
-            LoginUserCommand = new LambdaCommand(EnterIn);
+            LoginUserCommand = new LambdaCommand(LogIn);
         }
 
         public void CloseApp(object o)
@@ -27,9 +58,9 @@ namespace HouseRatingClientApp.ViewModel
             Application.Current.Shutdown();
         }
 
-        public void EnterIn(object o)
+        public void LogIn(object o)
         {
-            
+            //User
         }
     }
 }
