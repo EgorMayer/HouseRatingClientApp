@@ -3,7 +3,7 @@
     <Style x:Key="BorderStyle" TargetType="Border">
         <Setter Property="Background" Value="#098baf"/>
         <Setter Property="CornerRadius" Value="10"/>
-        <Setter Property="Width" Value="640"/>
-        <Setter Property="Height" Value="250"/>
+        <Setter Property="Padding" Value="10"/>
+        <Setter Property="Height" Value="300"/>
     </Style>
 </ResourceDictionary>
