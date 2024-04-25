@@ -10,14 +10,16 @@ using System.Windows.Input;
 
 namespace HouseRatingClientApp.ViewModel
 {
-    internal class LoginUserViewModel : VIewModelBase
+    public class LoginUserViewModel : VIewModelBase
     {
         public ICommand CloseWindowCommand { get; }
+        public ICommand LoginUserCommand { get; }
 
 
         public LoginUserViewModel()
         {
             CloseWindowCommand = new LambdaCommand(CloseApp);
+            LoginUserCommand = new LambdaCommand(EnterIn);
         }
 
         public void CloseApp(object o)
@@ -25,22 +27,9 @@ namespace HouseRatingClientApp.ViewModel
             Application.Current.Shutdown();
         }
 
-        public void EnterIn()
+        public void EnterIn(object o)
         {
-            //MainWindow mainWindow = new MainWindow(); //main Window.xaml
-            //EnterAppWindowViewModel viewModel = new EnterAppWindowViewModel();
-
-            //string json = JsonSerializer.Serialize("data.json");
-            //File.WriteAllText("data.json", json);
-
-            //var data = new { Login = , Password =  };
-            //string jsonString = JsonSerializer.Serialize(data);
-            //File.WriteAllText("data.json", jsonString);
-
-            //MessageBox.Show("Вы успешно вошли в аккаунт!");   
-
-            //CloseApp(viewModel);
-            //mainWindow.Show();
+            
         }
     }
 }

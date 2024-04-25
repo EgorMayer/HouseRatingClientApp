@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace HouseRatingClientApp.ViewModel.Base
 {
-    internal class VIewModelBase : INotifyPropertyChanged
+    public class VIewModelBase : INotifyPropertyChanged
     {
         public event PropertyChangedEventHandler? PropertyChanged;
 

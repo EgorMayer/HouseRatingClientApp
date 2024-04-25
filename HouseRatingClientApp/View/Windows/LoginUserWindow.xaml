@@ -11,9 +11,9 @@
         Background="Transparent"
         WindowStartupLocation="CenterScreen"
         WindowStyle="None"
-        Width="644" Height="252"
+        SizeToContent="WidthAndHeight"
         Title="EnterAppWindow">
-    <Border Style="{StaticResource BorderStyle}">
+    <Border Style="{StaticResource BorderStyle}" Height="150">
         <Border.DataContext>
             <vm:LoginUserViewModel/>
         </Border.DataContext>
@@ -28,8 +28,19 @@
                 <TextBlock Text="ПАРОЛЬ" Style="{StaticResource TextBlockStyle}"/>
                 <TextBox x:Name="TBPassword" Style="{StaticResource TextBoxStyle}"/>
             </StackPanel>
-            <Button Content="ВОЙТИ" Style="{StaticResource SaveButtonStyle}" Width="190"/>
-            <Button Command="{Binding CloseWindowCommand}" Content="ЗАКРЫТЬ" Style="{StaticResource SaveButtonStyle}" Width="190"/>
+            <Border Padding="0 10">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="auto"/>
+                        <ColumnDefinition Width="10"/>
+                        <ColumnDefinition Width="auto"/>
+                    </Grid.ColumnDefinitions>
+
+                    <Button Grid.Column="1" Command="{Binding LoginUserCommand}" Content="ВОЙТИ" Style="{StaticResource BaseButtonStyle}"/>
+                    <Button Grid.Column="3" Command="{Binding RegisterUserCommand}" Content="РЕГИСТРАЦИЯ" Style="{StaticResource BaseButtonStyle}"/>
+                </Grid>
+            </Border>
         </StackPanel>
     </Border>
 </Window>
